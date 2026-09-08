@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "speediebug"
+version = "0.1.0"
+description = "Lightweight pydevd optimizations for faster PyCharm debugging."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Allln" }]
+keywords = ["debugging", "pycharm", "pydevd", "performance"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Debuggers",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Allln/SpeeDiebug"
+Repository = "https://github.com/Allln/SpeeDiebug"
+Issues = "https://github.com/Allln/SpeeDiebug/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/speediebug"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
