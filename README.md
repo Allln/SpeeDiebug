@@ -76,6 +76,7 @@ From a source checkout, install the package in editable mode and then install
 the optional scientific stack:
 
 ```console
+# Build and install directly from the local source directory
 python -m pip install -e .
 python -m pip install pandas numpy scipy
 ```
